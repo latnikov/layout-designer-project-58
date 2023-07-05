@@ -1,7 +1,46 @@
-/** CSS STYLE **/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-.hello {
-  display: block;
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
 
-  color: #fff;
+:root {
+  --white: #fff;
+  --transparent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --transparent-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+  --headings-spacing: 1.2em;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+h1, h2, h3 {
+  font-family: 'Neucha', cursive;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  max-width: 1110px;
+  text-align: center;
+  margin: 100px 0 100px 0;
 }
