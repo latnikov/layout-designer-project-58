@@ -4,15 +4,14 @@
 
 :root {
   --white: #fff;
-  --transparent-white: #d7ccc0;
+  --semitransparent-white: #d7ccc0;
   --light: #f5f4f0;
   --main: #fe8a02;
   --main-dark: #42413c;
   --dark: #2a2626;
-  --transparent-dark: #908d8b;
+  --semitransparent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
-  --headings-spacing: 1.2em;
 }
 
 body {
@@ -43,4 +42,57 @@ section {
   max-width: 1110px;
   text-align: center;
   margin: 100px 0 100px 0;
+}
+
+
+header::before {
+  background-image: url(../../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+span {
+  color: var(--main);
+}
+
+body {
+  background: var(--light);
+}
+
+.header {
+  text-align: left;
+  position: relative;
+  padding-left: 165px;
+}
+
+.header img {
+  z-index: -1;
+  position: absolute;
+  top: -55px;
+  right: -270px;
+  height: 525px;
+  
+}
+
+h1 {
+  font-weight: normal;
+}
+.header p {
+  width: 540px;
+  text-align: left;
+}
+
+.header a {
+  font-weight: bold;
+  padding: 12px 24px 12px 24px;
+  background-color: var(--main);
+  text-decoration: none;
+  color: var(--light);
+  text-transform: uppercase;
+}
+
+.text-container {
+  margin-top: 185px;
+  display: flex;
+  gap: 30px;
 }
