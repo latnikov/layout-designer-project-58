@@ -1,0 +1,23 @@
+.container {
+  position: relative;
+
+  box-sizing: border-box;
+
+  width: 1110px;
+
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -15px;
+}
+
+.col {
+  flex: 1 0 0;
+
+  padding: 0 15px;
+}
