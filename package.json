@@ -13,8 +13,12 @@
     "stylelint-config-standard": "^30.0.1",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-scss": "^4.4.0",
-    "surge": "^0.23.1"
+    "surge": "^0.23.1",
+    "tailwindcss": "^3.3.3"
   },
   "author": "Nikita Mikhaylov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001547"
+  }
 }
