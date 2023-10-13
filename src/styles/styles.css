@@ -434,23 +434,6 @@ video {
   display: none;
 }
 
-header {
-  position: relative;
-  overflow-x: hidden;
-}
-
-header::before {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.1;
-  content: "";
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -559,69 +542,68 @@ header::before {
   position: relative;
 }
 
-.top-\[55px\] {
-  top: 55px;
-}
-
-.-right-\[2\] {
-  right: -2;
-}
-
 .-right-\[270px\] {
   right: -270px;
 }
 
-.-z-0 {
-  z-index: 0;
+.top-\[100px\] {
+  top: 100px;
 }
 
-.z-10 {
-  z-index: 10;
+.top-\[55px\] {
+  top: 55px;
 }
 
 .-z-10 {
   z-index: -10;
 }
 
+.-mt-\[50px\] {
+  margin-top: -50px;
+}
+
 .mt-\[185px\] {
   margin-top: 185px;
 }
 
-.mt-40 {
-  margin-top: 10rem;
+.mt-\[30px\] {
+  margin-top: 30px;
 }
 
-.mt-\[40px\] {
-  margin-top: 40px;
-}
-
-.mb-\[40px\] {
-  margin-bottom: 40px;
+.mb-\[16px\] {
+  margin-bottom: 16px;
 }
 
 .box-border {
   box-sizing: border-box;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
+}
+
+.h-\[323px\] {
+  height: 323px;
 }
 
 .h-\[525px\] {
   height: 525px;
 }
 
-.w-auto {
-  width: auto;
+.w-\[350px\] {
+  width: 350px;
 }
 
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
+.max-w-\[1300px\] {
+  max-width: 1300px;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+}
+
+.basis-\[350px\] {
+  flex-basis: 350px;
 }
 
 .flex-col {
@@ -632,6 +614,14 @@ header::before {
   flex-wrap: wrap;
 }
 
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
 .gap-\[30px\] {
   gap: 30px;
 }
@@ -640,19 +630,33 @@ header::before {
   gap: 40px;
 }
 
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 244 240 / var(--tw-bg-opacity));
+}
+
 .bg-primary {
   --tw-bg-opacity: 1;
   background-color: rgb(254 138 2 / var(--tw-bg-opacity));
 }
 
+.bg-primary-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(66 65 60 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.p-\[24px\] {
+  padding: 24px;
+}
+
 .px-\[165px\] {
   padding-left: 165px;
   padding-right: 165px;
-}
-
-.py-\[100px\] {
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 
 .px-\[24px\] {
@@ -665,6 +669,22 @@ header::before {
   padding-bottom: 12px;
 }
 
+.pt-\[100px\] {
+  padding-top: 100px;
+}
+
+.pt-\[216px\] {
+  padding-top: 216px;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .font-neucha {
   font-family: Neucha;
 }
@@ -673,8 +693,16 @@ header::before {
   font-family: Open Sans;
 }
 
+.text-\[52px\] {
+  font-size: 52px;
+}
+
 .text-\[72px\] {
   font-size: 72px;
+}
+
+.text-\[34px\] {
+  font-size: 34px;
 }
 
 .font-bold {
@@ -693,6 +721,11 @@ header::before {
   line-height: 1.6em;
 }
 
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(245 244 240 / var(--tw-text-opacity));
+}
+
 .text-primary {
   --tw-text-opacity: 1;
   color: rgb(254 138 2 / var(--tw-text-opacity));
@@ -701,6 +734,69 @@ header::before {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.number {
+  margin-bottom: 40px;
+  font-family: Neucha;
+  font-size: 64px;
+  line-height: 1;
+  --tw-text-opacity: 1;
+  color: rgb(42 38 38 / var(--tw-text-opacity));
+}
+
+.card {
+  width: 350px;
+  flex-basis: 350px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 244 240 / var(--tw-bg-opacity));
+  padding: 24px;
+}
+
+.heading {
+  font-family: Neucha;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.sect {
+  box-sizing: border-box;
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+header {
+  position: relative;
+  overflow-x: hidden;
+}
+
+header::before {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+  content: "";
+}
+
+section {
+  max-width: 1110px;
+  text-align: center;
+  padding: 100px 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #2a2626;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 /* 
@@ -714,8 +810,4 @@ header::before {
 Размер заголовка первого уровня: 72px
 Размер заголовка второго уровня: 60px
 Размер заголовка третьего уровня: 34px
-Секции
-Ограничение по ширине контента: 1110px
-Выравнивание по центру
-Отступы по 100 пикселей сверху и снизу
  */
