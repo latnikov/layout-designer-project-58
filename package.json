@@ -7,7 +7,7 @@
     "url": "https://github.com/latnikov/layout-designer-project-58"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./src/styles/style.css -o ./src/styles/public/styles.css --watch"
+    "build": "npx tailwindcss -i ./src/styles/style.css -o ./src/styles/styles.css --watch"
   },
   "main": "",
   "devDependencies": {
