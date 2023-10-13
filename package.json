@@ -4,10 +4,14 @@
   "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
+    "url": "https://github.com/latnikov/layout-designer-project-58"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/styles/style.css -o ./src/styles/public/styles.css --watch"
   },
   "main": "",
   "devDependencies": {
+    "caniuse-lite": "^1.0.30001547",
     "htmlhint": "^1.1.4",
     "stylelint": "^15.10.3",
     "stylelint-config-standard": "^30.0.1",
@@ -16,9 +20,6 @@
     "surge": "^0.23.1",
     "tailwindcss": "^3.3.3"
   },
-  "author": "Nikita Mikhaylov",
-  "license": "ISC",
-  "dependencies": {
-    "caniuse-lite": "^1.0.30001547"
-  }
+  "author": "Maxim Latnikov",
+  "license": "ISC"
 }
